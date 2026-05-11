@@ -1,0 +1,15 @@
+{
+  "name": "agency-pm-server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "agency-pm",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Project Management System for a 25-person marketing agency",
+  "scripts": {
+    "postinstall": "npm install --prefix client && npm install --prefix server",
+    "dev": "concurrently -n \"API,UI\" -c \"cyan.bold,magenta.bold\" \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix client",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
